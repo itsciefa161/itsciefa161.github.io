@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciefa161</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Makes it responsive */
+        }
+        .section {
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.1); /* Adds a slight background */
+            border-radius: 10px; /* Rounded corners */
+			margin-bottom: 20px; /* Add spacing between sections */
+        }
+        .pgp-key-section {
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+			align-self: flex-start; /* Align at the top */
+			margin-left: auto; /* Push it to the right */
+        }
+        .pgp-textarea {
+            width: 100%;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            padding: 5px;
+            resize: none; /* Disables resizing */
+        }
+        a {
+            color: #66aaff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            border-bottom: 2px solid #66aaff; /* Adds a line under the headings */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section" id="work-experience">
+            <h2>Work Experience</h2>
+			<p><b>Current</b>:</p>
+            <p>• Co-founder/CEO, Blockchain and Digital Assets education startup</p>
+            <p>• Council member, DeFi and GameFi DAO</p>
+			<br>
+			<p><b>Previous</b>:</p>
+            <p>• CS/CS Compliance, Two European CEXs</p>
+            <p>• 2nd-Level Tech & CS Compliance, Some of the biggest gaming publishers and developers</p>
+        </div>
+        <div class="section" id="about-me">
+            <h2>About Me</h2>
+            <p>Hi, I'm Ciefa :)</p>
+            <p>Blockchain & Digital Assets enthusiast.</p>
+            <p>Love to talk about Trading, Blockchains, Digital Assets and Economics.</p>
+            <p>You can find me on <a href="https://twitter.com/Ciefa161">Twitter</a>!</p>
+			<p>Alternatively, you can email me at ciefacapital@proton.me</p>
+        </div>
+        <div class="section" id="recent-blogs">
+            <h2>Recent Blog Articles</h2>
+            <p>Here I'll post recent blog articles I read and liked!</p>
+            <p>Topics include Blockchain & Digital Assets, Trading and Economics.</p>
+            <ul>
+                <li><a href="#">Placeholder Blog Title 1</a></li>
+                <li><a href="#">Placeholder Blog Title 2</a></li>
+                <li><a href="#">Placeholder Blog Title 3</a></li>
+            </ul>
+        </div>
+        <div class="pgp-key-section" id="pgp-key">
+            <h2>PGP Key</h2>
+            <div class="pgp-textarea" onclick="document.getElementById('pgp-key-text').select();">
+                <textarea id="pgp-key-text" rows="10" readonly>-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEZOPOShYJKwYBBAHaRw8BAQdALn/J78wQS5+n92nqb3n7j6UvSvzYGyH01JFS
+72FICGK0IUNpZWZhMTYxIDxjaWVmYWNhcGl0YWxAcHJvdG9uLm1lPoiZBBMWCgBB
+FiEEzA9WCXo1GnheGPr/2SEgqiyNlSEFAmTjzkoCGwMFCQPDH9YFCwkIBwICIgIG
+FQoJCAsCBBYCAwECHgcCF4AACgkQ2SEgqiyNlSHtUwEA/MnaR83YmFZSwwe7J2Jt
+pBbRvoiHyRe4EKi1rZiol0UBALn73PxvbF+cjO0ViQutnNVtu1pPnTavhmYEnftU
+u+8IuDgEZOPOShIKKwYBBAGXVQEFAQEHQOZ6pYizHroPa4XzwVrN2dDvE9Fx0+F2
+8Kiw2PdzB2gAAwEIB4h+BBgWCgAmFiEEzA9WCXo1GnheGPr/2SEgqiyNlSEFAmTj
+zkoCGwwFCQPDH9YACgkQ2SEgqiyNlSGAXAEAnaPqriMDzD37TmZsI8S6t/cHb/4F
+CwUApyU+l2yASygBAPZ0E1UvtsUYDjUd0FdC+PJjosSn5zQTlXdIu5jEZTkK
+=ES9m
+-----END PGP PUBLIC KEY BLOCK-----</textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
