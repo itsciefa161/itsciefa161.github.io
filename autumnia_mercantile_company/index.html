@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autumnia Mercantile Company</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2b2f38;
+            color: #f0a500;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #f0a500;
+            margin: 10px 0; 
+        }
+
+        .section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #3a3e48;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3a3e48;
+            padding: 20px;
+            color: #f0a500;
+        }
+
+        .footer-left,
+        .footer-middle,
+        .footer-right {
+            flex: 1;
+            text-align: center;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .footer-left {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .footer-middle img {
+            max-width: 100px;
+            margin: auto;
+            display: block;
+        }
+
+        .image-slider {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .slider-images {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .slider-images img {
+            display: none;
+            /* Hide all images */
+            width: 100%;
+            transition: all 0.5s;
+        }
+
+        .slider-images img.active {
+            display: block;
+            /* Show active image */
+        }
+
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .slider-button.left {
+            left: 0;
+        }
+
+        .slider-button.right {
+            right: 0;
+        }
+
+        .blog-section,
+        .lore-section {
+            padding: 20px;
+            background-color: #3a3e48;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            background-color: #3a3e48;
+            overflow: hidden;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .nav a {
+            float: left;
+            display: block;
+            color: #f0a500;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .footer-left,
+            .footer-middle,
+            .footer-right {
+                flex: 100%;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .nav {
+                flex-direction: column;
+                /* Stack items vertically */
+                align-items: stretch;
+                /* Stretch items to full width */
+            }
+
+            .nav a {
+                float: none;
+                /* Remove the float */
+                width: 100%;
+                /* Take full width */
+                text-align: center;
+                padding: 10px 0;
+                /* Adjust padding for better spacing */
+            }
+        }
+
+        .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh; /* Adjust the height as needed */
+  }
+
+  .centered-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .small p {
+    font-size: 12px;
+  }
+  .white {
+    color: white;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#divisions">Divisions</a>
+        <a href="#ranks">Ranks</a>
+        <a href="#lore">Founder</a>
+        <a href="#dao">DAO</a>
+        <a href="#financial">Financials</a>
+        <a href="https://www.influenceth.io/">Influence - The Game</a>
+    </div>
+    <div class="container">
+        <h1 align="center">The Autumnia Mercantile Company</h1>
+        <div class="section">
+            <div class="image-container"><img class="centered-image" src="images\autumnia_mercantile_company.jpeg" alt="Autumnia Mercantile Company" width="250" height="250"></div>
+            <p align="Center"><i>In trade, we trust; in ethics, we stand; in community, we thrive.</i>
+            </p>
+           <div class="small"><p align="center">Ciefa, Founder of the Autumnia Mercantile Company</p></div>
+        </div>
+        <h2 align="center" id="about">About the Autumnia Mercantile Company</h2>
+        <div class="section">
+            <p align="center">The Autumnia Mercantile Company is a neutral company focusing on trade. The main goal is to generate
+                wealth for every member through exploitation of the resources available in Adalian.</p>
+
+                <br><b>
+            <br>
+            <h1 align="center"><b>Core Principles:</b></h1>
+            <br>
+            <p align="center" class="white"><b>Neutrality and Ethical Trading:</b></p>
+            <p align="center">Inspired by his past, Ciefa places righteousness at the core of his operations.</p>
+            <br>
+            <p align="center" class="white"><b>Community First:</b></p>
+            <p align="center">The company will use its influence to better the conditions for all Members, prioritizing collective well-being over profit.</p>
+            <br>
+            <p align="center" class="white"><b>Discipline and Efficiency:</b></p>
+            <p align="center">Reflecting his own journey, the organizational culture emphasizes hard work, reliability, and respect for all.</p>
+            <br>
+            <p align="center" class="white"><b>Democratic Governance:</b></p>
+            <p align="center">The DAO Council is aimed at fostering a collective, empowering decision-making process that honors the dignity of each member.</p>
+            <br>
+
+
+            <h1 id="divisions" align="center"><b>Divisions:</b></h1>
+            <div class="image-container"><img class="centered-image" src="images\autumnia_mercantile_company_dao_council.jpeg" alt="Autumnia Mercantile Company" width="250" height="250"></div>
+            <p align="center" class="white"><b>DAO Council - The Syndicate:</b></p>
+            <p align="center">Comprising the Chiefs of each division and the Founder, the council offers an internally transparent, inclusive governance model.</p>
+            <br>
+            <br>
+            <div class="image-container"><img class="centered-image" src="images\autumnia_mercantile_company_fiscal_guild.jpeg" alt="Autumnia Mercantile Company" width="250" height="250"></div>
+            <p align="center" class="white"><b>Autumnia Fiscal Guild (AFG) - Finance Division:</b></p>
+            <p align="center">Responsible for managing the treasury, budget allocation, and financial risk assessment.</p>
+            <br>
+            <br>
+            <div class="image-container"><img class="centered-image" src="images\autumnia_mercantile_company_diplomat_division.jpeg" alt="Autumnia Mercantile Company" width="250" height="250"></div>
+            <p align="center" class="white"><b>Autumnia Diplomatic Corps (ADC) - Diplomatic Division:</b></p>
+            <p align="center">To negotiate trade agreements and foster inter-entity relationships.</p>
+            <br>
+            <br>
+            <div class="image-container"><img class="centered-image" src="images\autumnia_mercantile_company_mining_division.jpeg" alt="Autumnia Mercantile Company" width="250" height="250"></div>
+            <p align="center" class="white"><b>Autumnia Ore Ventures (AOV) - Mining Division:</b></p>
+            <p align="center">Specializing in asteroid mining and resource allocation.</p>
+            <br>
+            <br>
+            <div class="image-container"><img class="centered-image" src="images\autumnia_mercantile_company_industry_division.jpeg" alt="Autumnia Mercantile Company" width="250" height="250"></div>
+            <p align="center" class="white"><b>Autumnia Industrial Solutions (AIS) - Industry Division:</b></p>
+            <p align="center">Focused on refining, manufacturing, and infrastructure provision.</p>
+            <br>
+            <br>
+            <div class="image-container"><img class="centered-image" src="images\autumnia_mercantile_company_defense_division.jpeg" alt="Autumnia Mercantile Company" width="250" height="250"></div>
+            <p align="center" class="white"><b>Autumnia Shield (AS) - Defensive Military Division:</b></p>
+            <p align="center">Tasked with asset and personnel protection, crisis, and emergency responses.</p>
+            <br>
+            <br>
+            <div class="image-container"><img class="centered-image" src="images\autumnia_mercantile_company_offensive_division1.jpeg" alt="Autumnia Mercantile Company" width="250" height="250"></div>
+            <p align="center" class="white"><b>Autumnia Strike Force (ASF) - Offensive Military Division:</b></p>
+            <p align="center">Developed for strategic offensive capabilities.</p>
+            <br>
+            <p align="center">In the Autumnia Mercantile Company, every member is essential to the success of the company.</p>
+        </div>
+        <h2 align="center" id="ranks">Hierarchy & Ranks</h2>
+        <div align="center" class="lore-section">
+            <p>The DAO Council:</p>
+            <p class="white">• Council President (Ciefa)</p>
+            <p class="white">• Council Members (Currently Empty)</p>
+            <br>
+            <p>Autumnia Fiscal Guild (AFG) - Finance Division:</p>
+            <p class="white">• Chief Financial Officer</p>
+            <p>• Treasury Manager</p>
+            <p>• Budget Analyst</p>
+            <p>• Risk Assesor</p>
+            <br>
+            <p>Autumnia Diplomatic Corps (ADC) - Diplomatic Division:</p>
+            <p class="white">• Chief Diplomatic Officer</p>
+            <p>• Treaty Negotiator</p>
+            <p>• Ambassador-at-Large</p>
+            <p>• Intelligence Analyst</p>
+            <br>
+            <p>Autumnia Ore Ventures (AOV) - Mining Division:</p>
+            <p class="white">• Chief Mining Officer</p>
+            <p>• Lead Prospector</p>
+            <p>• Extraction Supervisor</p>
+            <p>• Resource Analyst</p>
+            <br>
+            <p>Autumnia Industrial Solutions (AIS) - Industry Division:</p>
+            <p class="white">• Chief Industrial Officer</p>
+            <p>• Production Manager</p>
+            <p>• Contract Controller</p>
+            <p>• Supply Chain Coordinator</p>
+            <br>
+            <p>Autumnia Shield (AS) - Defensive Military Division:</p>
+            <p class="white">• Chief Security Officer</p>
+            <p>• Defense Commander</p>
+            <p>• Security Analsyt</p>
+            <p>• Crisis Coordinator</p>
+            <br>
+            <p>Autumnia Strike Force (ASF) - Offensive Military Division:</p>
+            <p class="white">• Chief Offensive Officer</p>
+            <p>• Strike Commander</p>
+            <p>• Tactical Analyst</p>
+            <p>• Combat Specialist</p>
+        </div>
+        <h2 align="center" id="lore">About the Founder, Ciefa</h2>
+        <div class="lore-section">
+            <p align="center">The story of Ciefa is one of resilience and triumph over adversity. Born into servitude, he worked in the
+                harsh conditions of a mining company as a slave. His life was one of toil and struggle, yet Ciefa always
+                harbored dreams of something greater. Through sheer determination and a series of serendipitous events,
+                he gained his freedom. Through odd jobs and leveraging his innate skills, Ciefa scraped together enough
+                funds to purchase not just his freedom but a future—a modest asteroid, a rudimentary ship, and a loyal
+                crew. Armed with a spirit forged in the crucible of hardship, he resolved to create an organization
+                where ethics and dignity would be pillars, not afterthoughts.
+                <br><br>
+        </div>
+        <h2 align="center" id="dao">DAO Overview</h2>
+        <div class="section">
+            <p align="center">Each member of the Autumnia Mercantile Company will be a member of the DAO.</p>
+            <p align="center">Important decisions about the strategy and treasury will be held through the DAO.</p>
+            <p align="center">The weight for the votes will depend on the role of the voter. For example, a vote about usage of funds will give more weight to votes from someone in the Treasury division</p>
+            <p align="center">The DAO will initially consists out of the Founder and the 6 Heads of each division.</p>
+        </div>
+        <h2 align="center" id="financial">Treasury, Investments and Taxes</h2>
+        <div class="section">
+            <p align="center">The goal of the Autumnia Mercantile Company is to generate wealth for everyone.</p><br>
+            <p align="center">If members generate income through the alliance means, they're subject to paying 5% taxes.</p>
+            <p align="center">The funds will be allocated as follows:</p><br>
+
+            • 30% to New Member Fund: We support new members and help them to get started.<br>
+            • 30% to Company Treasury: These funds will be used for investments the DAO has voted for.<br>
+            • 20% to Industry Treasury: To keep expanding, we'll use funds from the Industry Treasury.<br>
+            • 20% to Military Treasury: We are neutral by standard. But we will not give up without a fight.<br><br>
+            <br>
+            <p align="center">The funds will have to be sent on a bi-weekly basis by each member through a Smart Contract that sends the funds automatically to the Company's Treasury which is guarded by the Council through a MultiSig Safe.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <footer class="footer">
+            <div class="footer-left">
+                <p>Disclaimer: The DAO and every Council member will have their own Wyoming LLC legal wrapper.</p>
+                <p>Besides me, there is right now no one else in the DAO Council.</p>
+            </div>
+            <div class="footer-middle">
+                <img src="images\autumnia_mercantile_company.jpeg" alt="Autumnia Mercantile Company">
+            </div>
+            <div class="footer-right">
+                <p>Ciefa LLC, Wyoming</p>
+                <p>For now, you can find and contact me here:</p>
+                <p>Twitter @ <a href="https://twitter.com/Ciefa161">Ciefa161</a></p>
+                <p>You can also visit my website <a href="https://www.ciefa161.eu/">here</a>.</p>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>
