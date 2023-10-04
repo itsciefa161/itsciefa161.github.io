@@ -16,38 +16,28 @@
             margin: 0;
         }
         .container {
-            width: 80%;
+            max-width: 1200px; /* Added max-width */
+            width: 95%; /* Reduced width and added padding for smaller screens */
+            padding: 0 2.5%;
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap; /* Makes it responsive */
-            
+            flex-wrap: wrap; 
         }
-
-        .section {
-            width: 30%;
-            padding: 20px;
-            box-sizing: border-box;
-            background-color: rgba(255, 255, 255, 0.1); /* Adds a slight background */
-            border-radius: 10px; /* Rounded corners */
-			margin-bottom: 20px; /* Add spacing between sections */
-        }
-        .section2 {
-            width: 30%;
-            padding: 20px;
-            box-sizing: border-box;
-            background-color: rgba(255, 255, 255, 0.1); /* Adds a slight background */
-            border-radius: 10px; /* Rounded corners */
-			margin-bottom: 20px; /* Add spacing between sections */
-            margin-left:77px;
-        }
-        .pgp-key-section {
-            width: 30%;
+        .section, .section2, .section3 {
+            width: 100%; /* By default, make them full width */
             padding: 20px;
             box-sizing: border-box;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
-			align-self: flex-start; /* Align at the top */
-			margin-left: auto; /* Push it to the right */
+            margin-bottom: 20px;
+        }
+        .pgp-key-section {
+            width: 100%; /* Full width for smaller screens */
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
         .pgp-textarea {
             width: 100%;
@@ -57,7 +47,7 @@
             border-radius: 5px;
             font-family: Arial, sans-serif;
             padding: 5px;
-            resize: none; /* Disables resizing */
+            resize: none;
         }
         a {
             color: #66aaff;
@@ -67,7 +57,24 @@
             text-decoration: underline;
         }
         h2 {
-            border-bottom: 2px solid #66aaff; /* Adds a line under the headings */
+            border-bottom: 2px solid #66aaff;
+        }
+    
+        /* Media Query for larger screens */
+        @media (min-width: 768px) {
+            .section, .section2, .section3 {
+                width: 48%; /* Make them half width on medium screens */
+            }
+        }
+    
+        /* Media Query for even larger screens */
+        @media (min-width: 1024px) {
+            .section, .section3 {
+                width: 30%; /* Original widths */
+            }
+            .section2, .section3 {
+                margin-left: 77px;
+            }
         }
     </style>
 </head>
@@ -83,14 +90,13 @@
             <p>• CS/CS Compliance, Two European CEXs</p>
             <p>• 2nd-Level Tech & CS Compliance, Two of the biggest gaming publishers and developers</p>
         </div>
-        <div class="section" id="about-me">
+        <div class="section3" id="about-me">
             <h2>About Me</h2>
             <p>Hi, I'm Ciefa :)</p>
             <p>Blockchain & Digital Assets enthusiast.</p>
             <p>Love to talk about Trading, Blockchains, Digital Assets and Economics.</p>
             <p>You can find me on <a href="https://twitter.com/Ciefa161">Twitter</a>!</p>
             <p>Nostr:<p>
-            <br>
             <p>npub1vlurl07dvgdn22hlnrxdexk4c9zkd0vc8z473grp73zgam9qgyvq5s9hfd</p>
             <p>(@ciefa161)</p>
 			<p>Alternatively, you can email me at ciefacapital@proton.me</p>
