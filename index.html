@@ -20,8 +20,7 @@
             width: 95%;
             padding: 0 2.5%;
             display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
             gap: 20px;
         }
         .section, .section2, .section3 {
@@ -67,14 +66,18 @@
         /* Media Query for larger screens */
         @media (min-width: 768px) {
             .section, .section2, .section3 {
-                width: 48%;
+                width: calc(50% - 10px);
             }
         }
     
         /* Media Query for even larger screens */
-        @media (min-width: 1024px) {
-            .section, .section3 {
-                width: 30%;
+        @media (min-width: 1200px) {
+            .section {
+                width: calc(33.33% - 10px);
+            }
+            .section2, .section3 {
+                width: calc(33.33% - 10px);
+                margin-left: 20px;
             }
         }
     </style>
