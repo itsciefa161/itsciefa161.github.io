@@ -16,28 +16,38 @@
             margin: 0;
         }
         .container {
-            max-width: 1400px;
-            width: 95%;
-            padding: 0 2.5%;
+            width: 80%;
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Makes it responsive */
+            
         }
-        .section, .section2, .section3 {
-            width: 100%;
+
+        .section {
+            width: 30%;
             padding: 20px;
             box-sizing: border-box;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.1); /* Adds a slight background */
+            border-radius: 10px; /* Rounded corners */
+			margin-bottom: 20px; /* Add spacing between sections */
+        }
+        .section2 {
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.1); /* Adds a slight background */
+            border-radius: 10px; /* Rounded corners */
+			margin-bottom: 20px; /* Add spacing between sections */
+            margin-left:77px;
         }
         .pgp-key-section {
-            width: 100%;
+            width: 30%;
             padding: 20px;
             box-sizing: border-box;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
-            margin-bottom: 20px;
+			align-self: flex-start; /* Align at the top */
+			margin-left: auto; /* Push it to the right */
         }
         .pgp-textarea {
             width: 100%;
@@ -47,7 +57,7 @@
             border-radius: 5px;
             font-family: Arial, sans-serif;
             padding: 5px;
-            resize: none;
+            resize: none; /* Disables resizing */
         }
         a {
             color: #66aaff;
@@ -57,28 +67,10 @@
             text-decoration: underline;
         }
         h2 {
-            border-bottom: 2px solid #66aaff;
+            border-bottom: 2px solid #66aaff; /* Adds a line under the headings */
         }
         .nostr-key {
-            word-wrap: break-word;
-        }
-    
-        /* Media Query for larger screens */
-        @media (min-width: 768px) {
-            .section, .section2, .section3 {
-                width: calc(50% - 10px);
-            }
-        }
-    
-        /* Media Query for even larger screens */
-        @media (min-width: 1200px) {
-            .section {
-                width: calc(33.33% - 10px);
-            }
-            .section2, .section3 {
-                width: calc(33.33% - 10px);
-                margin-left: 20px;
-            }
+        word-wrap: break-word;
         }
     </style>
 </head>
@@ -94,7 +86,7 @@
             <p>• CS/CS Compliance, Two European CEXs</p>
             <p>• 2nd-Level Tech & CS Compliance, Two of the biggest gaming publishers and developers</p>
         </div>
-        <div class="section3" id="about-me">
+        <div class="section" id="about-me">
             <h2>About Me</h2>
             <p>Hi, I'm Ciefa :)</p>
             <p>Blockchain & Digital Assets enthusiast.</p>
