@@ -16,15 +16,16 @@
             margin: 0;
         }
         .container {
-            max-width: 1200px; /* Added max-width */
-            width: 95%; /* Reduced width and added padding for smaller screens */
+            max-width: 1400px;
+            width: 95%;
             padding: 0 2.5%;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap; 
+            gap: 20px;
         }
         .section, .section2, .section3 {
-            width: 100%; /* By default, make them full width */
+            width: 100%;
             padding: 20px;
             box-sizing: border-box;
             background-color: rgba(255, 255, 255, 0.1);
@@ -32,7 +33,7 @@
             margin-bottom: 20px;
         }
         .pgp-key-section {
-            width: 100%; /* Full width for smaller screens */
+            width: 100%;
             padding: 20px;
             box-sizing: border-box;
             background-color: rgba(255, 255, 255, 0.1);
@@ -59,25 +60,22 @@
         h2 {
             border-bottom: 2px solid #66aaff;
         }
+        .nostr-key {
+            word-wrap: break-word;
+        }
     
         /* Media Query for larger screens */
         @media (min-width: 768px) {
             .section, .section2, .section3 {
-                width: 48%; /* Make them half width on medium screens */
+                width: 48%;
             }
         }
     
         /* Media Query for even larger screens */
         @media (min-width: 1024px) {
             .section, .section3 {
-                width: 30%; /* Original widths */
+                width: 30%;
             }
-            .section2, .section3 {
-                margin-left: 77px;
-            }
-        }
-        .nostr-key {
-        word-wrap: break-word;
         }
     </style>
 </head>
